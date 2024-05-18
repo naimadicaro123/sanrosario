@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+}
+.inicio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 40px;
+}
+.inicio-container img {
+    margin-right: 10px;
+}
+.SantoRosario {
+    margin-right: 20px;
+}
+.laslistas-container {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.laslistas-container li {
+    margin-left: 20px;
+}
+.introdutio-container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.introdu-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.int-container{
+   text-align: center;
+justify-content: center;
+   margin-bottom: 20px;
+}
+.hist-container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.history-container{
+    text-align: center;
+justify-content: center;
+   margin-bottom: 5px;
+}
+.histo-container{
+    text-align: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+.rezar-container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comum-container{
+    text-align: center;
+justify-content: center;
+   margin-bottom: 5px;
+}
+.oram-container{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tercum-container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tert-container{
+    text-align: center;
+justify-content: center;
+   margin-bottom: 5px;
+}
+.terco-container{
+    text-align: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+.mistery-container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mistery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Espaçamento interno opcional */
+}
+    .mistery-container h3 {
+     margin: 10px 0; /* Espaçamento entre os <h3> */
+}
+    .mistery-container p {
+    max-width: 600px; /* Limita a largura dos parágrafos para melhor legibilidade */
+}
