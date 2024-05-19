@@ -1,5 +1,12 @@
 *{
     margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.principal{
+
 }
 .inicio-container {
     display: flex;
@@ -8,18 +15,36 @@
     padding: 10px;
     background-color: #f8f9fa;
     margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
 }
+
 .inicio-container img {
-    margin-right: 10px;
+    margin-right: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    height:50px ;
+    width: 50px;
+}
+a.estilo {
+    text-decoration: none; 
+    color: inherit;
+    transition: color 1s ease;
+}
+
+a.estilo:hover {
+    color: yellow;
 }
 .SantoRosario {
     margin-right: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 .laslistas-container {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
+    margin-right: 15px;
 }
 .laslistas-container li {
     margin-left: 20px;
@@ -40,12 +65,13 @@
    text-align: center;
 justify-content: center;
    margin-bottom: 20px;
+   font-size: 20px;
 }
 .hist-container{
     margin-top: 20px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .history-container{
     text-align: center;
@@ -56,12 +82,19 @@ justify-content: center;
     text-align: center;
    justify-content: center;
    margin-bottom: 20px;
+   font-size: 20px;
 }
 .rezar-container{
-    margin-top: 20px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+.rezar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 .comum-container{
     text-align: center;
@@ -71,40 +104,47 @@ justify-content: center;
 .oram-container{
     text-align: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    max-width: 1000px;
 }
 .tercum-container{
-    margin-top: 20px;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+.tercum-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 .tert-container{
     text-align: center;
 justify-content: center;
    margin-bottom: 5px;
+   
 }
 .terco-container{
     text-align: center;
    justify-content: center;
    margin-bottom: 20px;
-}
-.mistery-container{
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+   max-width: 1000px;
+   font-size: 20px;
 }
 .mistery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px; /* Espaçamento interno opcional */
+    padding: 20px; 
+    font-size: 20px;
 }
     .mistery-container h3 {
      margin: 10px 0; /* Espaçamento entre os <h3> */
 }
     .mistery-container p {
     max-width: 600px; /* Limita a largura dos parágrafos para melhor legibilidade */
+
 }
