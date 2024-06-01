@@ -1,10 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-html{
-    
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 .inicio-container {
     display: flex;
@@ -13,161 +17,103 @@ html{
     padding: 10px;
     background-color: #f8f9fa;
     margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
 }
-
 .inicio-container img {
-    margin-right: 0px;
-    max-width: 100%;
-    max-height: 100%;
-    height:50px ;
+    height: 50px;
     width: 50px;
-    margin-right: 0px;
 }
 a.estilo {
     text-decoration: none; 
     color: inherit;
     transition: color 1s ease;
 }
-
 a.estilo:hover {
     color: gold;
 }
 .SantoRosario {
     margin-right: 20px;
-    margin-left: 0px;
-    padding-left: 0px;
-    text-align: left;
 }
 .laslistas-container {
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
-    margin-right: 15px;
-    margin-left:0px ;
     gap: 32px;
 }
-.laslistas-container li {
-    margin-left: 20px;
-    
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
-.laslistas-container a{
+@media (max-width: 768px) {
+    .laslistas-container {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+.overlay.open {
+    right: 0;
+}
+.menu-content {
+    padding: 20px;
+}
+.menu-content ul {
+    list-style: none;
+}
+.menu-content li {
+    margin: 20px 0;
+}
+.menu-content a {
+    text-decoration: none;
+    color: white;
     font-size: 18px;
-    color: black;
-    padding-block: 16px;
 }
-.principio{
+.principio {
     height: calc(100vh - 20vh);
     background-position: center;
-    background-size:cover ;
-    background-repeat:no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("imagens/background.jpg");
 }
-.introdutio-container{
+.introdutio-container, .hist-container, .rezar-container, .tercum-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 20px;
 }
-.introdu-container{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 5px;
-}
-.int-container{
+.int-container, .histo-container, .oram-container, .terco-container, .mistery-container p {
     text-align: center;
     justify-content: center;
     margin-bottom: 5px;
     font-size: 20px;
     max-width: 1000px;
-}
-.hist-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-.history-container{
-    text-align: center;
-justify-content: center;
-   margin-bottom: 5px;
-}
-.histo-container{
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    font-size: 20px;
-    max-width: 1000px;
-}
-
-.rezar-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-.comum-container{
-    text-align: center;
-justify-content: center;
-   margin-bottom: 5px;
-}
-.oram-container{
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    font-size: 20px;
-    max-width: 1000px;
-}
-.tercum-container{
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.tercum-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-.tert-container{
-    text-align: center;
-justify-content: center;
-   margin-bottom: 5px;
-   
-}
-.terco-container{
-    text-align: center;
-   justify-content: center;
-   margin-bottom: 20px;
-   max-width: 1000px;
-   font-size: 20px;
 }
 .mistery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px; 
-    font-size: 20px;
+    padding: 20px;
 }
-    .mistery-container h3 {
-     margin: 10px 0; /* Espaçamento entre os <h3> */
+.mistery-container h3 {
+    margin: 10px 0;
 }
-    .mistery-container p {
-    max-width: 600px; /* Limita a largura dos parágrafos para melhor legibilidade */
-
-}
-.finale-container{
+.finale-container {
     text-align: center;
 }
-footer{
+footer {
     background-color: gold;
     margin-top: 20px;
 }
