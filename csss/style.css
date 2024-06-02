@@ -17,6 +17,11 @@ body {
     padding: 10px;
     background-color: #f8f9fa;
     margin-bottom: 40px;
+    /* box-shadow: 0 -6px 10px 5px rgba(0,0,0,0 5); */
+}
+.fixed-header{
+    /* box-shadow: 0 -6px 10px 5px rgba(0,0,0,0 5); */
+
 }
 .inicio-container img {
     height: 50px;
@@ -79,14 +84,8 @@ a.estilo:hover {
     color: white;
     font-size: 18px;
 }
-.principio {
-    height: calc(100vh - 20vh);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("imagens/background.jpg");
-}
-.introdutio-container, .hist-container, .rezar-container, .tercum-container {
+
+.introdutio-container, .hist-container, .rezar-container, .tercum-container, .antigas-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,10 +109,20 @@ a.estilo:hover {
 .mistery-container h3 {
     margin: 10px 0;
 }
+
 .finale-container {
     text-align: center;
 }
 footer {
-    background-color: gold;
+    background-color:#f8f9fa ;
     margin-top: 20px;
+    border-bottom:0px ;
+    border-left: 0px;
+    border-right:0px ;
+    border-style: solid;
+    border-color: gold;
+    padding-top: 10px;
+}
+.pe-container{
+    padding-left: 20px;
 }
