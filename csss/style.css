@@ -3,51 +3,66 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-html {
+
+html, body {
     height: 100%;
-}
-body {
     font-family: 'Roboto', sans-serif;
-    height: 100%;
 }
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    border-bottom: 3px solid;
+}
+
 .inicio-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #f8f9fa;
-    margin-bottom: 40px;
-    /* box-shadow: 0 -6px 10px 5px rgba(0,0,0,0 5); */
 }
-.fixed-header{
-    /* box-shadow: 0 -6px 10px 5px rgba(0,0,0,0 5); */
 
+.logo-title-container {
+    display: flex;
+    align-items: center;
 }
-.inicio-container img {
+
+.image-container {
     height: 50px;
     width: 50px;
+    margin-right: 10px;
 }
+
+.SantoRosario {
+    font-size: 24px;
+}
+
 a.estilo {
     text-decoration: none; 
     color: inherit;
     transition: color 1s ease;
 }
+
 a.estilo:hover {
     color: gold;
 }
-.SantoRosario {
-    margin-right: 20px;
-}
+
 .laslistas-container {
     list-style: none;
     display: flex;
     gap: 32px;
 }
+
 .hamburger-menu {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
     .laslistas-container {
         display: none;
@@ -56,6 +71,7 @@ a.estilo:hover {
         display: block;
     }
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -67,18 +83,23 @@ a.estilo:hover {
     transition: right 0.3s ease;
     z-index: 1000;
 }
+
 .overlay.open {
     right: 0;
 }
+
 .menu-content {
     padding: 20px;
 }
+
 .menu-content ul {
     list-style: none;
 }
+
 .menu-content li {
     margin: 20px 0;
 }
+
 .menu-content a {
     text-decoration: none;
     color: white;
@@ -92,6 +113,12 @@ a.estilo:hover {
     text-align: center;
     padding: 20px;
 }
+
+/* Add top padding to the main content to avoid being covered by the fixed header */
+main.principio {
+    padding-top: 70px; /* Adjust this value based on the height of the fixed header */
+}
+
 .int-container, .histo-container, .oram-container, .terco-container, .mistery-container p {
     text-align: center;
     justify-content: center;
@@ -99,6 +126,7 @@ a.estilo:hover {
     font-size: 20px;
     max-width: 1000px;
 }
+
 .mistery-container {
     display: flex;
     flex-direction: column;
@@ -106,6 +134,7 @@ a.estilo:hover {
     text-align: center;
     padding: 20px;
 }
+
 .mistery-container h3 {
     margin: 10px 0;
 }
@@ -113,16 +142,24 @@ a.estilo:hover {
 .finale-container {
     text-align: center;
 }
+
 footer {
-    background-color:#f8f9fa ;
+    background-color: #f8f9fa;
     margin-top: 20px;
-    border-bottom:0px ;
-    border-left: 0px;
-    border-right:0px ;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     padding-top: 10px;
+    background-color: gold;
 }
-.pe-container{
+
+.pe-container {
     padding-left: 20px;
+}
+.tetro{
+    width: 300px;
+    height: 300px
+    max-width: ;
 }
